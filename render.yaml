@@ -6,6 +6,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     runtime: python-3.11
+    autoDeploy: true
     envVars:
       - key: LINE_CHANNEL_ACCESS_TOKEN
         sync: zt13i6sAFgm2vpkwZFQU4A/YBrUnozZoEKIVCk1DztDjAwKISDT7pnkIk0lMgtP0Txl67uLI1veD2q6foqf6LmehmRFC4fBX9+KnZ6rHhqo8sU3/Unqp506lnKEXLVdDy5D7Wh7LZxSQBRwnaMQ8GQdB04t89/1O/w1cDnyilFU=
