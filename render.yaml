@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: line-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: LINE_CHANNEL_SECRET
+        value: あなたのチャネルシークレット
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        value: あなたのチャネルアクセストークン
