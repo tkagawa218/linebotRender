@@ -1,12 +1,13 @@
 services:
   - type: web
-    name: line-bot
+    name: linebot-render
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    runtime: python-3.11
     envVars:
-      - key: LINE_CHANNEL_SECRET
-        value: 226ea347b96b4ed5dfd62e6780db06f4
       - key: LINE_CHANNEL_ACCESS_TOKEN
-        value: zt13i6sAFgm2vpkwZFQU4A/YBrUnozZoEKIVCk1DztDjAwKISDT7pnkIk0lMgtP0Txl67uLI1veD2q6foqf6LmehmRFC4fBX9+KnZ6rHhqo8sU3/Unqp506lnKEXLVdDy5D7Wh7LZxSQBRwnaMQ8GQdB04t89/1O/w1cDnyilFU=
+        sync: zt13i6sAFgm2vpkwZFQU4A/YBrUnozZoEKIVCk1DztDjAwKISDT7pnkIk0lMgtP0Txl67uLI1veD2q6foqf6LmehmRFC4fBX9+KnZ6rHhqo8sU3/Unqp506lnKEXLVdDy5D7Wh7LZxSQBRwnaMQ8GQdB04t89/1O/w1cDnyilFU=
+      - key: LINE_CHANNEL_SECRET
+        sync: 226ea347b96b4ed5dfd62e6780db06f4
